@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f5fc;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 1rem;
+}
+
+.logo {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+main {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.section-textinput {
+  width: 65%;
+  padding: 1rem;
+}
+
+.section-textexit {
+  width: 35%;
+  padding-top: 1rem;
+}
+
+.text-area {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  font-size: 3rem;
+  text-transform: lowercase;
+  resize: none;
+  padding: 2rem;
+}
+
+.text-area::placeholder {
+  color: #0a3871;
+}
+
+.info {
+  margin: 1.3rem 0;
+}
+
+.info-icon {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.info-text {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.btns-encrypt {
+  display: flex;
+  height: 12%;
+  justify-content: space-around;
+}
+
+.btn-encrypt {
+  width: 50%;
+  padding: 1.5rem 1rem;
+  margin: 0rem 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #0a3871;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-encrypt:hover {
+  background-color: #185299;
+}
+
+.btn-decrypt {
+  width: 50%;
+  padding: 1.5rem 1rem;
+  margin: 0rem 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: #d8dfe8;
+  border-radius: 10px;
+  color: #0a3871;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-decrypt:hover {
+  background-color: #b6bac0;
+}
+
+.text-exit {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  background-image: url("/assets/img/Muñeco.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  color: #0a3871;
+  resize: none;
+  font-size: 3rem;
+  padding: 1.5rem;
+}
+
+.btn-copy {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #0a3871;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-copy:hover {
+  background-color: #185299;
+}
+
+@media (max-width: 768px) {
+  main {
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+  }
+
+  .section-textinput {
+    /* display: block; */
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid black;
+  }
+
+  .section-textexit {
+    /* display: block; */
+    text-align: center;
+    width: 100%;
+    padding-top: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+  }
+
+  .text-exit {
+    height: 50vh;
+  }
+
+  .btn-copy {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}

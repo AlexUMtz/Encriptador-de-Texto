@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/img/Vector.png"
+        alt="Logo-Alura"
+        class="logo"
+        title="Alura"
+      />
+    </header>
+    <main>
+      <section class="section-textinput">
+        <textarea
+          class="text-area"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="info">
+          <i class="fa-solid fa-circle-info info-icon"
+            ><span class="info-text"
+              >Solo letras minúsculas y sin acentos</span
+            ></i
+          >
+        </div>
+        <div class="btns-encrypt">
+          <button class="btn-encrypt">Encriptar</button
+          ><button class="btn-decrypt">Desencriptar</button>
+        </div>
+      </section>
+      <section class="section-textexit">
+        <textarea class="text-exit" id="" cols="30" rows="10"></textarea>
+        <button class="btn-copy">Copiar</button>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
