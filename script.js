@@ -57,6 +57,13 @@ $btnDecrypt.addEventListener("click", (e) => {
   }
 });
 
+$btnCopy.addEventListener("click", (e) => {
+  $textExit.select();
+  navigator.clipboard.writeText($textExit.value);
+  $textExit.value = "";
+  alert("Texto Copiado");
+});
+
 const encrypt = (message) => {
   message = message.toLowerCase();
 
