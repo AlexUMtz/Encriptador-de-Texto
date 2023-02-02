@@ -4,7 +4,7 @@
 
 Construye un encriptador de texto con Javascript
 
-![Encriptador de texto](./assets/img/capturaChallenge1.png)
+![Encriptador de texto](./img/capturaChallenge1.png)
 
 Se muestra un encriptador de texto que permite el ingreso de cadenas en letras minusculas y dando click lo encripta, mostrandolo en una segunda textArea, de igual manera permite hacer el proceso inverso por medio del botón desencriptar.
 
